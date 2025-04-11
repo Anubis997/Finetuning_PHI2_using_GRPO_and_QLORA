@@ -53,6 +53,15 @@ The implementation focuses on optimizing language generation with custom reward 
 
 Our fine-tuning approach showed stable training loss values around 0.003-0.004 throughout the 300 training steps. While the primary objective was to improve summarization capabilities, the most noticeable change was in the model's response style and tone compared to the base Phi-2 model, rather than significant improvements in summarization quality.
 
+## Example
+
+Prompt: When I (f/22) went through my first real breakup 2 years ago because he needed space after a year of dating roand it effected me more than I thought. It was a horrible time in my life due to living with my mother and finally having the chance to cut her out of my life. I can admit because of it was an emotional wreck and this guy was stable and didn't know how to deal with me. We ended by him avoiding for a month or so after going to a festival with my friends. When I think back I wish he just ended. So after he ended it added my depression I suffered but my friends helped me through it and I got rid of everything from him along with cutting contact.
+Phi-2 Response: When I (f/22) went through my first real breakup 2 years ago because he needed space after a year of dating roand it effected me more than I thought. It was a horrible time in my life due to living with my mother and finally having the chance to cut her out of my life. I can admit because of it was an emotional wreck and this guy was stable and didn't know how to deal with me. We ended by him avoiding for a month or so after going to a festival with my friends. When I think back I wish he just ended. So after he ended it added my depression I suffered but my friends helped me through it and I got rid of everything from him along with cutting contact.
+I never really cared for him that much but I still cried everyday of the week. I got over it the next day after crying in my room but he never even texted or called me. I felt like it was all on me but I don't really think that
+GRPO + QLoRA Response: When I (f/22) went through my first real breakup 2 years ago because he needed space after a year of dating roand it effected me more than I thought. It was a horrible time in my life due to living with my mother and finally having the chance to cut her out of my life. I can admit because of it was an emotional wreck and this guy was stable and didn't know how to deal with me. We ended by him avoiding for a month or so after going to a festival with my friends. When I think back I wish he just ended. So after he ended it added my depression I suffered but my friends helped me through it and I got rid of everything from him along with cutting contact. It really helped me come to terms with it.
+I was in a long distance relationship with someone when he abruptly told me he broke up with me. I couldnt handle it because he was in another country, which I thought made things easier for him. After about
+
+
 ## Future Directions
 
 1. **Improved Reward Functions**: Replace BLEU with more sophisticated metrics like ROUGE, BERTScore, or custom reward models tailored for summarization tasks.
